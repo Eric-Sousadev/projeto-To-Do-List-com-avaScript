@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(16, 15, 15);
+}
+h1{
+    text-align: center;
+    font-size: 4em;
+    color: white;
+}
+header{
+    display: flex;
+    flex-grow: row wrap;
+    max-width: 800px;
+    margin: 50px auto;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+header:hover{
+    transform: scale(1.01); 
+}
+main{
+    
+    flex-grow: row wrap;
+    width: 90%;
+    margin: auto auto;
+    align-items: center;
+    margin-top: 4%;
+    
+}
+input{
+    height: 90px;
+    font-size: 2em;
+    width: 80%;
+    padding-left: 5%;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(80, 79, 79);
+}
+
+button.add{
+    width: 20%;
+    cursor: pointer;
+    width: 20%;
+    color: white;
+    background-color: green;
+    font-weight: bold;
+    border: none;
+    height: 90px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+button:hover{
+    bottom: rgb(0, 61, 0);
+    transform: scale(1.01); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+.item{
+    display: flex;
+    flex-grow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(80, 79, 79);
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border-radius: 10px;
+    margin-bottom: 2%
+}
+.item-clicado{
+    display: flex;
+    flex-grow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(80, 79, 79);
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border-radius: 10px;
+    margin-bottom: 2%
+}
+.item-clicado:hover{
+    transform: scale(1.01);
+}
+.item:hover{
+    transform: scale(1.01);
+}
+.item-icone{
+    flex: 10%;
+    text-align: center;
+    font-size: 2em;
+    
+}
+.item-nome{
+    flex: 75%;
+    font-size: 30px;
+    font-weight: bold;
+}
+.item-botao{
+    flex: 15%;
+    text-align: center;
+}
+.deletar{
+    border: none;
+    color: white;
+    background-color: red;
+    height: 80px;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.item-clicado{
+    background-color: rgb(70, 150, 70);
+}
+.item-clicado .item-nome{
+    text-decoration: line-through;
+    color: rgb(63, 60, 60);
+}
